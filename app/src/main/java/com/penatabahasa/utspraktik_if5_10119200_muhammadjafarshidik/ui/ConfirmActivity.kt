@@ -1,10 +1,17 @@
 package com.penatabahasa.utspraktik_if5_10119200_muhammadjafarshidik.ui
 
+import android.app.Dialog
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
+import android.view.Gravity
 import android.view.View
+import android.view.ViewGroup
+import android.view.Window
+import android.widget.Button
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import com.penatabahasa.utspraktik_if5_10119200_muhammadjafarshidik.R
 import com.penatabahasa.utspraktik_if5_10119200_muhammadjafarshidik.data.User
 import com.penatabahasa.utspraktik_if5_10119200_muhammadjafarshidik.databinding.ActivityConfirmBinding
@@ -60,15 +67,50 @@ class ConfirmActivity : AppCompatActivity() {
     }
 
     private fun showDialogSuccess() {
-        val view = View.inflate(this@ConfirmActivity, R.layout.dialg_success, null)
-        val builder = AlertDialog.Builder(this@ConfirmActivity)
+//        val view = View.inflate(this@ConfirmActivity, R.layout.dialg_success, null)
+//        val builder = AlertDialog.Builder(this@ConfirmActivity)
+//        builder.setView(view)
+//        val dialog = builder.create()
+//
+//        dialog.setCancelable(false)
+//        dialog.show()
+
+       //view.btnOk.setOnClickListener { finishAffinity() }
+
+        val builder = AlertDialog.Builder(this, R.style.CustomAlertDialog)
+            .create()
+        val view = layoutInflater.inflate(R.layout.dialg_success, null)
+        val button = view.findViewById<Button>(R.id.btnOk)
         builder.setView(view)
-        val dialog = builder.create()
+        builder.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        builder.setContentView(R.layout.dialg_success)
+        button.setOnClickListener {
+            finishAffinity()
+        }
+        builder.setCanceledOnTouchOutside(false)
+        builder.show()
 
-        dialog.setCancelable(false)
-        dialog.show()
+        builder.window!!.setLayout(
+            ViewGroup.LayoutParams.MATCH_PARENT,
+            ViewGroup.LayoutParams.WRAP_CONTENT
+        )
+        builder.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        builder.window!!.attributes.windowAnimations = R.style.DialogAnimation
+        builder.window!!.setGravity(Gravity.BOTTOM)
 
-        view.btnOk.setOnClickListener { finishAffinity() }
+//        val dialog = Dialog(this)
+//
+//        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+//        dialog.setContentView(R.layout.dialg_success)
+//        dialog.setCancelable(false)
+//        dialog.show()
+//        dialog.window!!.setLayout(
+//            ViewGroup.LayoutParams.MATCH_PARENT,
+//            ViewGroup.LayoutParams.WRAP_CONTENT
+//        )
+//        dialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+//        dialog.window!!.attributes.windowAnimations = R.style.DialogAnimation
+//        dialog.window!!.setGravity(Gravity.BOTTOM)
     }
 
     private fun iconBackPressed() {
