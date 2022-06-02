@@ -1,0 +1,26 @@
+<!--2 Juni 2022-->
+<!--10119200-->
+<!--Muhammad Jafar Shidik-->
+<!--IF-5-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="73dp"
+    android:height="69dp"
+    android:viewportWidth="73"
+    android:viewportHeight="69">
+  <path
+      android:pathData="M23,69C50.614,69 73,46.614 73,19C73,12.274 71.672,5.858 69.263,0H9C4.029,0 0,4.029 0,9V63.408C6.885,66.981 14.707,69 23,69Z"
+      android:fillType="evenOdd">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startX="36.5"
+          android:startY="0"
+          android:endX="36.5"
+          android:endY="69"
+          android:type="linear">
+        <item android:offset="0" android:color="#FFFFE180"/>
+        <item android:offset="1" android:color="#00FFE180"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+</vector>

@@ -1,0 +1,47 @@
+<!--2 Juni 2022-->
+<!--10119200-->
+<!--Muhammad Jafar Shidik-->
+<!--IF-5-->
+<resources>
+    <string name="app_name">UTSPraktik-IF5-10119200-MuhammadJafarShidik</string>
+    <string name="icon_back">Icon Back</string>
+    <string name="title_form">Form Pengisian Data</string>
+    <string name="title_cardview_info">Info</string>
+    <string name="desc_info">Form berikut ini bertujuan untuk memberikan informasi kepada pusat agar dapat mudah dilaporkan</string>
+    <string name="title_nik">NIK</string>
+    <string name="desc_nik">Masukkan NIK</string>
+    <string name="desc_name">Masukkan nama</string>
+    <string name="choose_date">Pilih Tanggal</string>
+    <string name="title_name">Name</string>
+    <string name="required">• Harus Diisi</string>
+    <string name="title_date_of_birth">Tanggal Lahir</string>
+    <string name="title_gender">Jenis Kelamin</string>
+    <string name="female">Perempuan</string>
+    <string name="male">Laki-laki</string>
+    <string name="title_relationship">Hubungan Dengan Anda</string>
+    <string name="parent">Orangtua</string>
+    <string name="couple">Suami/Istri</string>
+    <string name="child">Anak</string>
+    <string name="kin">Kerabat Lainnya</string>
+    <string name="next">Selanjutnya</string>
+    <string name="title_confirm">Cek Kembali Isian Data</string>
+    <string name="value_of_nik">7323456778941234</string>
+    <string name="value_of_name">Mohammad Reksa</string>
+    <string name="value_of_birthday">2 November 1993</string>
+    <string name="value_of_gender">Laki-laki</string>
+    <string name="value_of_relationship">Orangtua</string>
+    <string name="save">Simpan</string>
+    <string name="update">Ubah</string>
+    <string name="saved">Berhasil Mendapatkan Akses</string>
+    <string name="illustration_saved">Illustration Saved</string>
+    <string name="desc_saved">Silahkan tap tombol di bawah untuk untuk memulai mengisi form Lapor Kesehatan Harian.</string>
+    <string name="ok">OK</string>
+    <string name="ellipse">ellipse</string>
+    <string name="test_type">Jenis Tes</string>
+    <string name="rapid_antigen">Rapid Antigen</string>
+    <string name="pcr">PCR</string>
+    <string name="date_confirmed">Tanggal Terkonfirmasi</string>
+    <string name="desc_checkbox">Dengan ini saya menyetujui bahwa data yang saya isikan adalah benar</string>
+    <string name="date">8 September 2021</string>
+    <string name="rectangle">Rectangle</string>
+</resources>
